@@ -358,6 +358,11 @@ body > div.realityis > div:nth-child(1) > h4.voltaire.white-underline.large-text
     padding-bottom: 3%;
 }
 
+button.gl-green-btn:nth-child(2) {
+    width: 180px;
+    padding: 10px;
+}
+
 #custom-blog, .custom-blog-post {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -402,6 +407,7 @@ h5.green-text {
 }
 
 .post-content {
+    max-width: 100%;
     width: 75%;
 }
 
@@ -580,6 +586,10 @@ h6.lato {
         grid-template-columns: 1fr;
     }
 
+    .post-content {
+        width: 100%;
+    }
+
     .footer {
         grid-template-columns: 1fr;
     }
@@ -591,6 +601,11 @@ h6.lato {
     .after-footer img {
         width: 50px;
         height: auto;
+    }
+
+    p.upper-case{
+        font-size: 16px;
+        margin-left: 30px;
     }
 
     .footer > div:nth-child(3) > img:nth-child(1) {
@@ -646,5 +661,9 @@ h6.lato {
 
         #custom-blog {
             grid-template-columns: 1fr;
+        }
+
+        .post-content {
+            width: 100%;
         }
 } 
