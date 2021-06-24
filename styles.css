@@ -1,0 +1,650 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.double-space {
+    line-height: 2;
+}
+
+.half-space {
+    line-height: 1.5;
+}
+
+
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+/* 
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Voltaire', sans-serif;
+*/
+
+.xl-text {
+    font-size: 50px;
+}
+
+.large-text {
+    font-size: 42px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.green-text {
+    color: #33D434;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.dark-gray {
+    color: #313131;
+}
+
+.gray-text {
+    color: #4A4A4A;
+}
+
+.link-gray {
+    color: #7E7E7E;
+}
+
+.green-bg {
+    background-color: #33D434;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;  
+}
+
+.voltaire {
+    font-family: 'Voltaire', sans-serif;
+}
+
+.lato-light {
+    font-weight: 300;
+}
+
+.lato-medium {
+    font-weight: 600;
+}
+
+.lato-heavy {
+    font-weight: 900;
+}
+
+.gl-btn {
+    display: inline;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.gl-green-btn {
+    background-color: #33D434;
+    color: #000;
+    font-size: 20px;
+}
+
+.gl-yellow-btn {
+    background-color: #FEC70A;
+    color: #000;
+    font-size: 20px;
+}
+
+.gf-home-banner {
+    background: bottom / cover no-repeat url('img-header.jpg');
+    min-height: 300px;
+    max-height: 800px;
+    height: 800px;
+    max-width: 100%;
+}
+
+/* all grids */
+.grid, .solar-power-company, .whathowwhy > div:last-of-type, 
+.realityis-grid, .takecare > div:nth-of-type(2), #custom-blog,
+.custom-blog-post  {
+    display: grid;
+}
+
+.solar-power-company {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding-left: 5%;
+}
+
+.spc-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    padding-bottom: 20px;
+}
+
+body > div.solar-power-company > div > div:nth-child(1) > h2 {
+    display: inline;
+    position: relative;
+    z-index: 3;
+}
+
+body > div.solar-power-company > div > div:nth-child(1) > h2.upper-case.lato.lato-heavy.green-underline.large-text.no-margin-bottom::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-color: #33D434;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body > div.solar-power-company > div > div:nth-child(1) > h2.upper-case.lato.lato-heavy.green-underline.large-text.no-margin-top {
+    position: relative;
+    z-index: 3;
+}
+
+body > div.solar-power-company > div > div:nth-child(1) > h2.upper-case.lato.lato-heavy.green-underline.large-text.no-margin-top::before  {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-color: #33D434;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.solar-power-company > img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+/* what */
+.whathowwhy {
+    background: center / cover no-repeat url('img-thehowwhatwhy.jpg');
+    min-height: 500px;
+    max-width: 100%;
+    padding: 5%;
+}
+
+.whathowwhy div:first-of-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whathowwhy > div:last-of-type  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.whathowwhy iframe {
+    width: 400px;
+    height: 220px;
+}
+
+.whathowwhy button {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: -15px;
+    font-size: 22px;
+}
+
+.realityis  {
+    background: center / cover no-repeat url('img-realitybackground-gradient.jpg');
+    min-height: 500px;
+    max-width: 100%;
+    padding: 5%;
+}
+
+.realityis hr {
+    color: #5C5C5C;
+    width: 75%;
+}
+
+.realityis > div:first-of-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.realityis > .realityis-grid  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body > div.realityis > div:nth-child(1) > h4.upper-case.lato.lato-medium.white-underline.gray-text.large-text.no-margin-bottom,
+body > div.realityis > div:nth-child(1) > h4.voltaire.white-underline.large-text.no-margin-top {
+    position: relative;
+    z-index: 3;
+}
+
+body > div.realityis > div:nth-child(1) > h4.upper-case.lato.lato-medium.white-underline.gray-text.large-text.no-margin-bottom::before,
+body > div.realityis > div:nth-child(1) > h4.voltaire.white-underline.large-text.no-margin-top::before  {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.percent img {
+    justify-self: end;
+    margin-left: 130px;
+}
+
+.topPercent {
+    grid-area: a;
+    justify-self: center;
+}
+
+.leftPercent {
+    grid-area: b;
+    width: min-content;
+    justify-self: end;
+}
+
+.centerPercent {
+    grid-area: c;
+}
+
+.bottomPercent {
+    grid-area: d;
+    justify-self: center;
+}
+
+
+.realityCTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.realityCTA > button {
+    margin-left: 20px;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+}
+
+
+
+.takecare {
+    position: relative;
+    background: center / cover no-repeat url('img-installsection.jpg');
+    min-height: 700px;
+    max-width: 100%;
+    padding: 5%;
+    z-index: 1;
+}
+
+.takecare > div:first-of-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.takecare > div:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.takecare > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logobanner {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 2;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logobanner img {
+    width: 150px;
+    height: auto;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    background: #33D43438;
+    min-height: 300px;
+    max-height: 500px;
+    padding-bottom: 3%;
+}
+
+#custom-blog, .custom-blog-post {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#custom-blog {
+    grid-template-columns: 340px 1fr;
+    height: auto;
+    padding: 5%;
+}
+
+.custom-blog-post img {
+    height: 250px;
+    width: 250px;
+}
+
+h5.green-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.custom-blog-post {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+
+#custom-blog > div:nth-child(1) {
+    justify-self: center;
+}
+
+.post-title {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.post-author {
+    margin: 5px 0 0 0;
+}
+
+.post-content {
+    width: 75%;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #00000010;
+    padding-bottom: 20px;
+
+}
+
+.footer ul {
+    list-style: none;
+    justify-self: center;
+    padding-left: 0;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+}
+
+.footer > div:nth-child(2), .footer > div:nth-child(3) {
+    align-self: flex-start;
+    justify-self: center;
+}
+
+.footer > div:nth-child(3) > img:nth-child(1) {
+    width: 80%;
+    margin: 0 0 45px 0;
+}
+
+.footer  .footer-sm-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.footer  .footer-sm-links img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+h6.lato {
+    margin: 20px 0 0 0;
+}
+
+
+.after-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000BA;
+}
+
+.after-footer img {
+    width: 100px;
+    height: auto;
+    margin: 0  30px;
+}
+
+.after-footer > img:nth-child(4) {
+    height: 80px;
+    width: 60px;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1300px) {
+    button.gl-btn:nth-child(5), .spc-content > div:nth-child(2) > button:nth-child(2) {
+        width: 200px;
+        font-size: 28px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .spc-content > div:nth-child(2) > button:nth-child(2) {
+        width: 325px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 1600px) {
+    .takecare > div:nth-child(2) > p:nth-child(2) {
+        font-size: 16px !important;
+    }
+}
+
+
+@media screen and (min-width: 340px) and (max-width: 849px) {
+
+        /* solar intro */
+        .solar-power-company {
+            grid-template-columns: 1fr;
+        }
+
+        .solar-power-company > img {
+            display: none;
+            /* for now */
+        }
+
+
+        /* we take care h4s */
+        /* take care response */
+        h4.white-text:nth-child(1),
+        h4.upper-case:nth-child(2) {
+            font-size: 16px !important;
+        }
+        .takecare > div:nth-of-type(2) {
+            grid-template-columns: 1fr;
+        }
+
+        .takecare > div:nth-child(2) > p:nth-child(2) {
+            line-height: normal;
+        }
+
+        .logobanner img {
+            width: 75px;
+            height: auto;
+        }
+
+        /* cta  */
+
+        .cta {
+            padding: 0;
+            height: 300px;
+        }
+
+        h5.upper-case {
+            font-size: 24px;
+        }
+        /* cta end */
+        /* take care response */
+
+
+        /* who what */
+        .whathowwhy > div:last-of-type {
+            grid-template-columns: 1fr;
+        }
+
+        /* who what */
+
+    .realityis > .realityis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h4.white-underline:nth-child(1),
+    h4.voltaire {
+        font-size: 20px !important;
+    }
+
+    .percent img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    #custom-blog {
+        grid-template-columns: 1fr;
+    }
+
+    #custom-blog > div:nth-child(1) {
+        justify-self: flex-start;
+        grid-area: 2 / 1;
+    }
+
+    .custom-blog-post {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .after-footer {
+        margin-top: 20px;
+    }
+
+    .after-footer img {
+        width: 50px;
+        height: auto;
+    }
+
+    .footer > div:nth-child(3) > img:nth-child(1) {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+        /* we take care h4s */
+        h4.white-text:nth-child(1),
+        h4.upper-case:nth-child(2) {
+            font-size: 20px !important;
+        }
+
+        .logobanner img {
+            width: 75px;
+            height: auto;
+        }
+
+        /* take care cta */
+        h5.upper-case {
+            font-size: 28px;
+        }
+
+        .cta {
+            padding: 0;
+            height: 300px;
+        }
+        /* cta end */
+        /* take care */
+
+        .realityis > .realityis-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .percent img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4.white-underline:nth-child(1),
+        h4.voltaire {
+            font-size: 24px !important;
+        }
+
+
+
+        #custom-blog {
+            grid-template-columns: 1fr;
+        }
+} 
